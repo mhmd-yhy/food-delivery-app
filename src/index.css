@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* #9a3412 Orange-800 */
+/* #431407 Orange-950 */
+/* #52525b Zinc-600 */
+
+body {
+  font-family: "Roboto", sans-serif;
+}
