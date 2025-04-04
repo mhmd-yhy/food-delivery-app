@@ -39,7 +39,10 @@ const ShoppingCart = ({ onChange_ShowCartMood }) => {
           <div className=' text-green-600 font-bold'>{completeMessage}</div>
           <div className='text-end'>
             <button onClick={onChange_ShowCartMood} className='px-3 text-orange-700 bg-transparent rounded-2xl capitalize border border-orange-700 cursor-pointer hover:bg-orange-700 hover:text-stone-200 duration-500'>close</button>
-            <button onClick={handle_Complete} className='px-3 ml-2 text-stone-200 bg-orange-700 rounded-2xl capitalize cursor-pointer hover:bg-transparent hover:text-orange-700 hover:border hover:border-orange-700 duration-500'>order</button>
+
+            {cartItems.length > 0 &&
+              <button onClick={handle_Complete} className='px-3 ml-2 text-stone-200 bg-orange-700 rounded-2xl capitalize cursor-pointer hover:bg-transparent hover:text-orange-700 hover:border hover:border-orange-700 duration-500'>order</button>
+            }
           </div>
 
         </div>
